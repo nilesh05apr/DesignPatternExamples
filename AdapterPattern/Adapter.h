@@ -1,8 +1,8 @@
-#include<iostream>
 #include"Target.h"
 #include"Adaptee.h"
-using namespace std;
 
+#ifndef Adapter_H
+#define Adapter_H
 class Adapter: public Target{
     private:
     Adaptee *adaptee_;
@@ -10,5 +10,6 @@ class Adapter: public Target{
     public:
     Adapter(Adaptee *adaptee);
 
-    string Request() override;
+    std::string Request() override;
 };
+#endif

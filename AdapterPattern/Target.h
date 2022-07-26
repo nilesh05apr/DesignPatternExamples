@@ -1,9 +1,10 @@
-#include<iostream>
-using namespace std;
+#ifndef Target_H
+#define Target_H
 
 class Target {
     public:
     virtual ~Target();
-    virtual string Request();
+    virtual std::string Request();
 
 };
+#endif

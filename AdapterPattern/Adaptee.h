@@ -1,7 +1,9 @@
-#include<iostream>
-using namespace std;
+#ifndef Adaptee_H
+#define Adaptee_H
 
 class Adaptee {
     public:
-    string AdapteeRequest();
+    std::string AdapteeRequest();
 };
+
+#endif
