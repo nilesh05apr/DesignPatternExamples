@@ -3,7 +3,7 @@
 
 class Target {
     public:
-    virtual ~Target();
+    virtual ~Target() = default;
     virtual std::string Request();
 
 };

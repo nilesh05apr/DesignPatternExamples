@@ -20,9 +20,7 @@ using namespace std;
 
 // };
 
-Adapter::Adapter(Adaptee *adaptee) {
-    this->adaptee_ = adaptee;
-}
+Adapter::Adapter(Adaptee *adaptee) :adaptee_(adaptee) {};
 
 std::string Adapter::Request() {
     std::string to_reverse = this->adaptee_->AdapteeRequest();

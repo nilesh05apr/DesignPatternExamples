@@ -9,11 +9,9 @@ using namespace std;
 
 //     }
 //     virtual ~Target() = default;
-
 // };
 
 std::string Target::Request(){
     return "This is Default Target behaviour: \n";
 }
 
-Target::~Target() = default;

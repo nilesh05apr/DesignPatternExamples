@@ -3,6 +3,7 @@
 
 class Adaptee {
     public:
+    Adaptee();
     std::string AdapteeRequest();
 };
 

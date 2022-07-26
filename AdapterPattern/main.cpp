@@ -13,7 +13,6 @@ int main(){
 
     std::cout<<"Client: Target Object is working fine \n";
     Target *target = new Target;
-
     Client(target);
     Adaptee *adaptee = new Adaptee;
     std::cout<<"Client: Adapter Interface \n";
