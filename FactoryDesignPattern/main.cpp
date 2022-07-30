@@ -9,7 +9,7 @@ using namespace std;
 class Client{
 public:
     Client(){
-        auto type = Vehicle::VType::TWOWHEELER;
+        Vehicle::VType type = Vehicle::VType::TWOWHEELER;
         pVehicle = Vehicle::Create(type);
     }
     ~Client(){
