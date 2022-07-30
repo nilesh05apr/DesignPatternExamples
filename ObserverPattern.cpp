@@ -14,7 +14,6 @@ class Subject {
     virtual void notifyObserver() {}
 };
 
-
 class CricketData: virtual public Subject {
     public:
         CricketData(){
