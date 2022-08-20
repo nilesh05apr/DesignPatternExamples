@@ -1,7 +1,6 @@
 #include "Singleton.h"
 #include <iostream>
 
-Singleton *Singleton::instance = 0;
 
 void client1(void) {
     Singleton::getInstance()->setData(10);

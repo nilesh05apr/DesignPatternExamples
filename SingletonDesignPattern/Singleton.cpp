@@ -1,13 +1,16 @@
 #include "Singleton.h"
 #include <iostream>
 
+Singleton *Singleton::instance = 0;
+
+
 Singleton::Singleton(){
     data = 0;
 }
 
 Singleton Singleton::*getInstance(){
     if(!(instance)){
-        instance = new Singleton;
+        instance = new Singleton();
         return instance;
     }
 }

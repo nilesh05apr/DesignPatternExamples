@@ -4,7 +4,8 @@
 class Singleton {
     static Singleton *instance;
     int data;
-    Singleton(){}
+    Singleton();
+
     public:
         static Singleton *getInstance();
         int getData();
