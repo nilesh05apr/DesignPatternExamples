@@ -5,9 +5,9 @@ Singleton::Singleton(){
     data = 0;
 }
 
-static Singleton Singleton::*getInstance(){
-    if(!(this->instance)){
-        this->instance = new Singleton;
+Singleton Singleton::*getInstance(){
+    if(!(instance)){
+        instance = new Singleton;
         return instance;
     }
 }
